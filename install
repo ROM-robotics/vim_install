@@ -1,0 +1,15 @@
+#!/bin/bash
+sudo apt install -y vim
+mkdir ~/.vim
+cp -r .vim/* ~/.vim/
+
+touch ~/.vimrc
+echo "syntax on" >> ~/.vimrc
+echo "set autoindent" >> ~/.vimrc
+echo "set smartindent" >> ~/.vimrc
+echo "set number" >> ~/.vimrc
+#set mouse=a
+echo "colorscheme sublimemonokai" >> ~/.vimrc
+
+echo "Done vim cofigurations, you can delete this local repo"
+
